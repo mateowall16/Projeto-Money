@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Ação - Projeto Dropshipping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .task-item:has(input:checked) label {
+            text-decoration: line-through;
+            color: #6b7280;
+        }
+        .progress-bar-fill {
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Cabeçalho -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-400">Plano de Ação</h1>
+            <p class="text-lg sm:text-xl text-gray-300 mt-2">Projeto Dropshipping: Dilatador Nasal Magnético</p>
+        </header>
+
+        <!-- Container das Fases -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+
+            <!-- Fase 1: Validação e Estrutura -->
+            <div class="bg-gray-800 rounded-xl shadow-lg p-6" id="fase-1">
+                <h2 class="text-2xl font-semibold mb-1 text-cyan-400">Fase 1: Validação e Estrutura</h2>
+                <p class="text-gray-400 mb-4">Pesquisa de mercado, fornecedores e definição da marca.</p>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
+                    <div class="bg-cyan-500 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Tarefa: Análise de Mercado -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Análise de Mercado e Concorrência</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task1-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task1-1" class="ml-3 text-gray-300">Analisar interesse de busca no Google Trends.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task1-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task1-2" class="ml-3 text-gray-300">Analisar concorrentes no Mercado Livre.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task1-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task1-3" class="ml-3 text-gray-300">Encontrar lojas de dropshipping que vendem o produto.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task1-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task1-4" class="ml-3 text-gray-300">Definir o público-alvo detalhadamente.</label>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <!-- Tarefa: Fornecedores -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Seleção de Fornecedores</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task2-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task2-1" class="ml-3 text-gray-300">Listar 10 fornecedores potenciais no AliExpress.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task2-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task2-2" class="ml-3 text-gray-300">Verificar reputação (>95%), tempo de loja e frete.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task2-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task2-3" class="ml-3 text-gray-300">Comprar amostras dos 3 melhores para testar qualidade.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task2-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task2-4" class="ml-3 text-gray-300">Selecionar o fornecedor final.</label>
+                            </li>
+                        </ul>
+                    </details>
+                    
+                    <!-- Tarefa: Branding -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Definição da Marca (Branding)</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task3-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task3-1" class="ml-3 text-gray-300">Escolher o nome da loja.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task3-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task3-2" class="ml-3 text-gray-300">Criar um logotipo simples.</label>
+                            </li>
+                             <li class="task-item flex items-center">
+                                <input id="task3-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task3-3" class="ml-3 text-gray-300">Definir paleta de cores e tom de voz.</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Fase 2: Construção da Plataforma -->
+            <div class="bg-gray-800 rounded-xl shadow-lg p-6" id="fase-2">
+                <h2 class="text-2xl font-semibold mb-1 text-cyan-400">Fase 2: Construção da Plataforma</h2>
+                <p class="text-gray-400 mb-4">Montagem e configuração técnica da loja virtual.</p>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
+                    <div class="bg-cyan-500 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Tarefa: Configuração Técnica -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Configuração Técnica</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task4-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task4-1" class="ml-3 text-gray-300">Escolher e contratar plataforma (Shopify, Nuvemshop).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task4-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task4-2" class="ml-3 text-gray-300">Registrar o domínio (www.sualoja.com).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task4-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task4-3" class="ml-3 text-gray-300">Configurar o gateway de pagamento (Mercado Pago).</label>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <!-- Tarefa: Design e Conteúdo -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Design e Conteúdo do Site</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task5-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task5-1" class="ml-3 text-gray-300">Customizar o layout e design da loja.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task5-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task5-2" class="ml-3 text-gray-300">Criar página de produto com descrição, fotos e vídeos.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task5-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task5-3" class="ml-3 text-gray-300">Criar páginas essenciais (Sobre, Contato, FAQ).</label>
+                            </li>
+                             <li class="task-item flex items-center">
+                                <input id="task5-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task5-4" class="ml-3 text-gray-300">Criar páginas legais (Políticas, Termos, Entrega).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task5-5" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task5-5" class="ml-3 text-gray-300">Realizar uma compra-teste completa.</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Fase 3: Marketing e Lançamento -->
+            <div class="bg-gray-800 rounded-xl shadow-lg p-6" id="fase-3">
+                <h2 class="text-2xl font-semibold mb-1 text-cyan-400">Fase 3: Marketing e Lançamento</h2>
+                <p class="text-gray-400 mb-4">Atrair clientes e realizar as primeiras vendas.</p>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
+                    <div class="bg-cyan-500 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Tarefa: Configuração de Marketing -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Configuração de Ferramentas</summary>
+                         <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task6-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task6-1" class="ml-3 text-gray-300">Criar perfis da loja nas redes sociais (Instagram, TikTok).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task6-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task6-2" class="ml-3 text-gray-300">Criar conta no Gerenciador de Anúncios do Facebook.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task6-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task6-3" class="ml-3 text-gray-300">Instalar o Pixel do Facebook na loja.</label>
+                            </li>
+                             <li class="task-item flex items-center">
+                                <input id="task6-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task6-4" class="ml-3 text-gray-300">Configurar o Google Analytics.</label>
+                            </li>
+                        </ul>
+                    </details>
+                    
+                    <!-- Tarefa: Conteúdo e Anúncios -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Conteúdo e Anúncios</summary>
+                         <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task7-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task7-1" class="ml-3 text-gray-300">Planejar e criar os primeiros 10 posts/vídeos.</label>
+                            </li>
+                             <li class="task-item flex items-center">
+                                <input id="task7-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task7-2" class="ml-3 text-gray-300">Gravar vídeos do produto em uso (com a amostra).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task7-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task7-3" class="ml-3 text-gray-300">Definir estratégia e orçamento dos primeiros anúncios.</label>
+                            </li>
+                             <li class="task-item flex items-center">
+                                <input id="task7-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task7-4" class="ml-3 text-gray-300">Lançar a primeira campanha de tráfego pago.</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Fase 4: Operações e Finanças -->
+            <div class="bg-gray-800 rounded-xl shadow-lg p-6" id="fase-4">
+                <h2 class="text-2xl font-semibold mb-1 text-cyan-400">Fase 4: Operações e Finanças</h2>
+                <p class="text-gray-400 mb-4">Gestão do negócio no dia a dia.</p>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
+                    <div class="bg-cyan-500 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Tarefa: Planejamento Financeiro -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Planejamento Financeiro</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task8-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task8-1" class="ml-3 text-gray-300">Definir o preço final de venda do produto.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task8-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task8-2" class="ml-3 text-gray-300">Criar planilha de precificação e margem de lucro.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task8-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task8-3" class="ml-3 text-gray-300">Definir o investimento inicial de cada sócio.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task8-4" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task8-4" class="ml-3 text-gray-300">Abrir uma conta bancária dedicada ao projeto.</label>
+                            </li>
+                        </ul>
+                    </details>
+                    
+                    <!-- Tarefa: Atendimento ao Cliente -->
+                    <details class="bg-gray-900 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg">Processo de Atendimento</summary>
+                        <ul class="mt-3 space-y-2 pl-4">
+                            <li class="task-item flex items-center">
+                                <input id="task9-1" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task9-1" class="ml-3 text-gray-300">Criar e-mail de suporte (contato@sualoja.com).</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task9-2" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task9-2" class="ml-3 text-gray-300">Criar respostas-padrão para perguntas comuns.</label>
+                            </li>
+                            <li class="task-item flex items-center">
+                                <input id="task9-3" type="checkbox" class="h-4 w-4 rounded bg-gray-700 border-gray-600 text-cyan-500 focus:ring-cyan-600">
+                                <label for="task9-3" class="ml-3 text-gray-300">Definir responsável e tempo de resposta.</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Lógica para atualizar as barras de progresso
+        document.addEventListener('DOMContentLoaded', () => {
+            const phases = document.querySelectorAll('[id^="fase-"]');
+
+            const updateProgressBar = (phaseElement) => {
+                const checkboxes = phaseElement.querySelectorAll('input[type="checkbox"]');
+                const checkedCheckboxes = phaseElement.querySelectorAll('input[type="checkbox"]:checked');
+                const totalTasks = checkboxes.length;
+                const completedTasks = checkedCheckboxes.length;
+                
+                const percentage = totalTasks > 0 ? (completedTasks / totalTasks) * 100 : 0;
+                
+                const progressBar = phaseElement.querySelector('.progress-bar-fill');
+                if (progressBar) {
+                    progressBar.style.width = `${percentage}%`;
+                }
+            };
+
+            phases.forEach(phase => {
+                // Atualiza a barra no carregamento da página
+                updateProgressBar(phase);
+
+                // Adiciona um listener para cada checkbox dentro da fase
+                const checkboxes = phase.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        updateProgressBar(phase);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
